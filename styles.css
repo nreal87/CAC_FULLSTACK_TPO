@@ -1,0 +1,67 @@
+* {
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(black, grey, lightgrey, white, lightgrey, grey, black);
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 5% 65% 27%;
+    grid-template-rows: 10% 5% 70% 10%;
+    grid-template-areas: "header header header"
+        ". nav ."
+        ". main aside"
+        "footer footer footer"
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    justify-content: center;
+}
+
+.menu {
+    display: grid;
+    grid-area: nav;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+aside {
+    display: grid;
+    grid-area: aside;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    grid-area: main;
+}
+
+h2 {
+    display: grid;
+    justify-content: center;
+}
+
+section {
+    display: grid;
+}
+
+.pie {
+    display: grid;
+    grid-area: footer;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-align: center;
+}

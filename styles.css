@@ -1,9 +1,10 @@
-*{
-    margin:10px;
-    padding: 10px;
+* {
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
-.main{
+.padre{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -30,17 +31,11 @@
                 flex: 1 1 auto;
                 height: 30px;
             }
-            nav{
+            .nav{
                 background: coral;
                 flex: 5 1 auto;
-                /*height: 30px;*/  
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: end;
-            }
-            nav a{
-                
+                height: 30px;
+
             }
             .social{
                 background: coral;
@@ -58,7 +53,7 @@
         background: #000;
         display: flex;
     }
-        .articles-father{
+        .articulos{
             background:purple;
             flex: 2 1 auto;
             display: flex;
@@ -84,39 +79,32 @@
         display: flex;
         justify-content: center;
     }
-        .footer-nav{
+        .pie{
             background:limegreen;
             width: 300px;
         }
 
-/*De 601 a 800px*/
-@media all and (max-width: 800px){
-/*El aside debe pasar hacia abajo*/
-    .section{
-        flex-direction: column;
-    }
-/*Los elementos del menu deben mostrarse uno debajo del otro*/
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
-/*Los elementos del aside se deben mostrar uno al lado del otro*/
-    .aside{
-        display: flex;
-        justify-content: center;
-    }
+h2 {
+    display: grid;
+    justify-content: center;
+}
+
+section {
+    display: grid;
 }
 
 /*De 401 a 600px*/
 @media all and (max-width: 600px){
-    .articles-father{
+    .articulos{
         flex-direction: column;
     }
 }
 
-/*De 0 a 400px*/
-@media all and (max-width: 400px){
-    .aside{
-        flex-direction: column;
-    }
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-align: center;
 }

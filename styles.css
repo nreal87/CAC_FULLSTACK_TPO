@@ -9,59 +9,32 @@ body {
     background: linear-gradient(black, grey, lightgrey, white, lightgrey, grey, black);
     display: grid;
     grid-gap: 1%;
-    grid-template-columns: 5% 65% 27%;
-    grid-template-rows: 10% 5% 70% 10%;
+    grid-template-columns: 16% 65% 16%;
+    grid-template-rows: 15% 70% 10%;
     grid-template-areas: "header header header"
-        ". nav ."
-        ". main aside"
+        " . section ."
         "footer footer footer"
 }
 
-.header {
-    display: grid;
-    grid-area: header;
-    justify-content: center;
-}
+.logo {display: grid; grid-area: logo;}
 
-.menu {
-    display: grid;
-    grid-area: nav;
-    text-align: center;
-    font-size: 1.5rem;
-}
+.menu {display: flex; grid-area: nav; justify-items: space-around; margin: 0%; padding: 0%; font-size: 1.5rem;}
 
-aside {
-    display: grid;
-    grid-area: aside;
-    justify-content: center;
-}
+.social {display: grid; grid-area: social;}
 
-.content {
-    display: grid;
-    grid-area: main;
-}
+.content {display: grid; grid-area: section; margin: 0%; padding: 0%}
 
-h2 {
-    display: grid;
-    justify-content: center;
-}
+.pie {display: grid; grid-area: footer; justify-content: center; align-content: center;}
 
-section {
-    display: grid;
-}
 
-.pie {
-    display: grid;
-    grid-area: footer;
-    justify-content: center;
-    align-content: center;
-}
+#copyright {color: #000000; text-align: center}
 
-a {
-    text-decoration: none;
-    color: white;
-}
+#codo, #gracias {color: white; font-size: small; text-align: center;}
 
-p {
-    text-align: center;
-}
+h1 {display: grid; justify-content: center; align-content: center; margin: 0%; padding: 0%;}
+
+p {display: grid; margin: 0%; padding: 0%}
+
+header {display: flex; grid-area: header; justify-content: space-around;
+    background-image: url(imagenes/header2-1024x603.png);}
+

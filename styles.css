@@ -1,43 +1,52 @@
 * {
-    overflow: hidden;
-    height: 100%;
+    /*overflow: hidden;*/
+    /*height: 100%;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
     background: linear-gradient(black, grey, lightgrey, white, lightgrey, grey, black);
     display: grid;
     grid-gap: 1%;
-    grid-template-columns: 5% 65% 27%;
-    grid-template-rows: 10% 5% 70% 10%;
-    grid-template-areas: "header header header"
-        ". nav ."
-        ". main aside"
-        "footer footer footer"
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% auto 20%;
+    grid-template-areas:    "top        top         top"
+                            ".          main        ."
+                            "footer     footer      footer"
 }
 
-.header {
+.top{
+    grid-area: top;
     display: grid;
-    grid-area: header;
-    justify-content: center;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: "logo menu .";
+    align-content: center;
+}
+
+.logo{
+    grid-area: logo;
 }
 
 .menu {
-    display: grid;
-    grid-area: nav;
-    text-align: center;
-    font-size: 1.5rem;
+    grid-area: menu;
+    text-align: right;
+    font-size: 1.2rem;
 }
 
-aside {
+.menu a{
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/*aside {
     display: grid;
     grid-area: aside;
     justify-content: center;
-}
+}*/
 
-.content {
-    display: grid;
+.main {
     grid-area: main;
 }
 
@@ -50,7 +59,7 @@ section {
     display: grid;
 }
 
-.pie {
+.footer {
     display: grid;
     grid-area: footer;
     justify-content: center;
@@ -64,4 +73,63 @@ a {
 
 p {
     text-align: center;
+}
+
+/*Estilos del formulario*/
+p.contact{
+    text-align: left;
+}
+
+form{
+    border-radius: 20px;
+    border-color: grey;
+    /*background-color: lightgray;*/
+    padding: 25px;
+    margin: 0 20%;
+    /*color: blue;*/
+    /*font-weight: bold;*/
+    border-style:solid;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 2px;
+    border: 3px solid grey;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+label{
+    /*color:#505050;*/
+}
+
+input:focus, textarea:focus, select:focus{
+    border: 3px solid blue;
+}
+
+.button{
+    width: 30%;
+    font-size: 100%;
+    font-weight: bold;
+    color:#505050;
+}
+
+.button:hover{
+    width: 30%;
+    background-color: blue;
+    border: 3px solid blue;
+    color: white;
+}
+
+.form-buttons{
+    text-align: center;
+}
+
+#required{
+    font-size: 75%;
+    font-weight: normal;
+    font-style: italic;
 }

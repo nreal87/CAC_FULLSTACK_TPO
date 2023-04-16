@@ -82,13 +82,26 @@ p.contact{
 
 form{
     border-radius: 20px;
-    border-color: grey;
-    /*background-color: lightgray;*/
+    border: 3px solid grey;
+}
+
+.form-top{
+    border-radius: 15px 15px 0px 0px;
+    border: 3 solid grey;
+    width:100%;
+    background-color: grey;
+    color:white;
+    padding: 10px;
+    margin:0px;
+}
+
+.form-top>h2{
+    margin:5px;
+}
+
+.form-body{
     padding: 25px;
     margin: 0 20%;
-    /*color: blue;*/
-    /*font-weight: bold;*/
-    border-style:solid;
 }
 
 input, textarea, select {

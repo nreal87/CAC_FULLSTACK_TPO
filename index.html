@@ -11,13 +11,16 @@
 </head>
 
 <body>
+    <!--Header Flex+Grid pero los hijos con Flex wrap para no heredar-->
     <header>
         <div class="logo"> <img src="imagenes/logo.png" alt="Logo"></div>
 
         <nav class="menu">
-            <a href="#">Vinos</a>
-            <a href="#">Bodega</a>
-            <a href="#">Contacto</a>
+            <ul>
+                <li><a href="#">Vinos</a></li>
+                <li><a href="#">Bodega</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
         </nav>
 
         <div class="social"> <a href="imagenes/instagram.png" target="_blank"><abbr title="Seguinos en Instangram"><img
@@ -25,19 +28,20 @@
     </header>
 
     <section class="content">
-        <h1>Pequeña Historia</h1>
-        <p>Lorem ipsum dolor sit amet. <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ad laboriosam ullam quas laborum
-            vero
-            voluptate iusto hic autem alias?</p>
+        <h1>Bienvenidos a Bodega La Azul</h1>
+        <p id="historia">La Azul es una pequeña bodega situada al pie del imponente Cordón del Plata, parte de la Cordillera de Los Andes, en el Valle de Uco, corazón de la provincia de Mendoza. <br>
+            En 2003 nace Bodega La Azul, pero la tradición del cultivo de la viña irriga nuestras venas desde que nuestros abuelos llegaron al Valle de Uco y entendieron que en este suelo pedregoso podrían producirse excelentes frutas. <br>
+            Hoy en día la bodega cuenta con una capacidad de 120.000 litros en tanques de acero inoxidable. La línea de varietales terminará su camino en botella, luego de su paso por los tanques; las líneas Reserva y Gran Reserva, en cambio, pasarán a barricas de roble francés y americano; que con sus diferentes tostados y aromas modifican sutilmente por largos meses al vino que duerme dentro suyo.</p>
     </section>
 
+    <!--Probar opacity del fondo en el css-->
     <footer class="pie">
-        <p id="copyright"> © Bodega La Azul 2023 </p>
         <a id="codo" href="https://inscripcionesagencia.bue.edu.ar/codoacodo/" title="Agencia de aprendizaje"
-            target="_blank">Desarrollado para Codo a Codo</a>
-        <a id="gracias" href="<a href=" https://www.flaticon.es/iconos-gratis/vino" title="íconos"
-            target="_blank">Íconos creados por Freepik - Flaticon</a>
+        target="_blank">Desarrollado para Codo a Codo</a>
+        <a id="copyright" href="https://bodegalaazul.com/" title="Bodega La Azul"
+        target="_blank"> © Bodega La Azul 2023 </a>
+        <a id="gracias" href="https://www.flaticon.es" title="íconos"
+        target="_blank">Íconos creados por Freepik - Flaticon</a>
     </footer>
 </body>
 

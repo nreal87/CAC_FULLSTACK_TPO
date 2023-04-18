@@ -7,14 +7,15 @@
 
 body {
     height: 100vh;
+    margin:0;
     background: linear-gradient(black, grey, lightgrey, white, lightgrey, grey, black);
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 10% auto 20%;
-    grid-template-areas:    "top        top         top"
-                            ".          main        ."
-                            "footer     footer      footer"
+    grid-template-areas:    "top top top"
+                            ". main ."
+                            "footer footer footer"
 }
 
 .top{
@@ -23,21 +24,25 @@ body {
     grid-template-columns: 20% 60% 20%;
     grid-template-areas: "logo menu .";
     align-content: center;
+    background-color: #091255;
 }
 
 .logo{
     grid-area: logo;
+    color: white;
 }
 
 .menu {
     grid-area: menu;
     text-align: right;
+    align-content: center;
     font-size: 1.2rem;
 }
 
 .menu a{
+    display: inline;
     vertical-align: middle;
-    padding: 10px;
+    padding: 0 15px;
 }
 
 /*aside {
@@ -45,13 +50,39 @@ body {
     grid-area: aside;
     justify-content: center;
 }*/
-
 .main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "contact-data map"
+                         "form form"
+}
+
+.contact-data {
+    grid-area: contact_data;
+}
+
+.map{
+    grid-area: map;
+    padding: 10%;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 h2 {
-    display: grid;
     justify-content: center;
 }
 
@@ -60,10 +91,10 @@ section {
 }
 
 .footer {
-    display: grid;
     grid-area: footer;
     justify-content: center;
     align-content: center;
+    background-color: #505050;
 }
 
 a {
@@ -76,13 +107,15 @@ p {
 }
 
 /*Estilos del formulario*/
-p.contact{
+/*p.contact{
     text-align: left;
-}
+}*/
 
 form{
+    grid-area: form;
     border-radius: 20px;
     border: 3px solid grey;
+    margin: 0 10%;
 }
 
 .form-top{

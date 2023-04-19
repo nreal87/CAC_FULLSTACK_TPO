@@ -39,7 +39,7 @@ body {
     font-size: 1.2rem;
 }
 
-.menu a{
+.menu ul li{
     display: inline;
     vertical-align: middle;
     padding: 0 15px;
@@ -59,7 +59,7 @@ body {
 }
 
 .contact-data {
-    grid-area: contact_data;
+    grid-area: contact-data;
 }
 
 .map{

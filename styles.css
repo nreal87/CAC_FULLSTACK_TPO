@@ -20,7 +20,7 @@ body {
 .top{
     grid-area: top;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 70% 20%;
     grid-template-areas: "logo menu .";
     align-content: center;
     background-color: #091255;
@@ -28,7 +28,19 @@ body {
 
 .logo{
     grid-area: logo;
-    color: white;
+    vertical-align: middle;
+    align-content: center;
+}
+
+.logo-container{
+    height:100%;
+    overflow: hidden;
+}
+
+.logo-container a{
+    
+    vertical-align: middle;
+    align-content: center;
 }
 
 .menu {
@@ -66,7 +78,7 @@ body {
 
 .map{
     grid-area: map;
-    padding: 10%;
+    padding: 5%;
 }
 
 .map-responsive {
@@ -159,15 +171,11 @@ p {
 }
 
 /*Estilos del formulario*/
-/*p.contact{
-    text-align: left;
-}*/
-
 form{
     grid-area: form;
     border-radius: 20px;
     border: 3px solid grey;
-    margin: 0 10%;
+    margin: 0 10% 5% 10%;
 }
 
 .form-top{

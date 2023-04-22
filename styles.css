@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     /*overflow: hidden;*/
     /*height: 100%;*/
@@ -17,10 +18,33 @@ body {
                          "footer"
 }
 
+h1 {
+    color: #505050;
+    font-size:xx-large;
+}
+
+h2 {
+    justify-content: center;
+}
+
+section {
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+/* Estilos del top */
 .top{
     grid-area: top;
     display: grid;
-    grid-template-columns: 20% 70% 20%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-areas: "logo menu .";
     align-content: center;
     background-color: #091255;
@@ -35,12 +59,13 @@ body {
 .logo-container{
     height:100%;
     overflow: hidden;
+    display:flex;
+    vertical-align: middle;
+    justify-content: center;
 }
 
 .logo-container a{
-    display:flex;
     align-self: center;
-    justify-self: center;
 }
 
 .menu {
@@ -56,11 +81,21 @@ body {
     padding: 0 15px;
 }
 
+/* Estilos del footer */
+.footer {
+    grid-area: footer;
+    justify-content: center;
+    align-content: center;
+    background-color: #505050;
+}
+
 /*aside {
     display: grid;
     grid-area: aside;
     justify-content: center;
 }*/
+
+/* Estilos del main */
 .main {
     padding: 20px 20%;
     background-color: #f5f5f5;
@@ -72,6 +107,7 @@ body {
                          "form form"
 }
 
+/* Estilos de la pagina de contacto */
 .contact-data {
     grid-area: contact-data;
 }
@@ -139,37 +175,6 @@ body {
     font-weight: bold;
 }
 
-/* Estilos generales */
-h1 {
-    color: #505050;
-    font-size:xx-large;
-    /*justify-content: center;*/
-}
-
-h2 {
-    justify-content: center;
-}
-
-section {
-    display: grid;
-}
-
-.footer {
-    grid-area: footer;
-    justify-content: center;
-    align-content: center;
-    background-color: #505050;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-p {
-    text-align: center;
-}
-
 /*Estilos del formulario*/
 form{
     grid-area: form;
@@ -206,10 +211,6 @@ input, textarea, select {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
-}
-
-label{
-    /*color:#505050;*/
 }
 
 input:focus, textarea:focus, select:focus{

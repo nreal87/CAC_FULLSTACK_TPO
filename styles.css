@@ -257,3 +257,20 @@ input:focus, textarea:focus, select:focus{
     font-weight: normal;
     font-style: italic;
 }
+
+/* Media queries */
+
+/*De 720 a 1920px*/
+@media all and (max-width: 1920px){
+    
+}
+    
+/*De 540 a 720px*/
+@media all and (max-width: 720px){
+
+}
+
+/*De 0 a 540px*/
+@media all and (max-width: 540px){
+
+}

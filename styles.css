@@ -33,8 +33,8 @@ section {
 
 a {
     text-decoration: none;
-    color: white;
-}
+    color:inherit;
+} 
 
 p {
     text-align: center;
@@ -87,7 +87,16 @@ p {
 .menu ul li{
     display: inline;
     vertical-align: middle;
-    padding: 0 15px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    color:white;
+    transition: all 0.5s ease;
+}
+
+#current-page, .menu ul li:hover {
+    background-color: white;
+    color: #091255;
+    border-radius: 5px;
 }
 
 /* Estilos del footer */
@@ -217,9 +226,8 @@ input, textarea, select {
     margin: 8px 0;
     border-radius: 2px;
     border: 3px solid grey;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
     outline: none;
+    transition: all 0.5s ease;
 }
 
 input:focus, textarea:focus, select:focus{

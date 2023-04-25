@@ -118,8 +118,11 @@ p {
 /************************/
 /* Pagina: contact.html */
 /* Estilos del main     */
+.index-main>h1{
+    color:white;
+}
+
 .index-main {
-    /* display: grid;  */
     grid-area: main; 
     margin: 0%; 
     padding: 0%;

@@ -101,17 +101,37 @@ p {
 
 /* Estilos del footer */
 .footer {
+    display: flex; 
     grid-area: footer;
-    justify-content: center;
+    background: #505050; 
+    justify-content: space-evenly; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
     align-content: center;
-    background-color: #505050;
 }
 
-/*aside {
-    display: grid;
-    grid-area: aside;
-    justify-content: center;
-}*/
+#codo, #gracias, #copyright {
+    color: white; 
+    height: 30%;
+}
+
+/************************/
+/* Pagina: contact.html */
+/* Estilos del main     */
+.index-main {
+    /* display: grid;  */
+    grid-area: main; 
+    margin: 0%; 
+    padding: 0%;
+    background-image: url(img/barriles-bodega.jpg); 
+    justify-items: center;
+}
+
+#historia{
+    color: beige; 
+    width: 80%; 
+    text-align: center;
+}
 
 /************************/
 /* Pagina: contact.html */
@@ -127,7 +147,6 @@ p {
                          "form form"
 }
 
-/* Estilos de la pagina de contacto */
 .contact-data {
     grid-area: contact-data;
 }
@@ -261,47 +280,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 
-
-/************************/
-/* Pagina: contact.html */
-/* Estilos del main     */
-body{
-    background: beige;
-    display: grid;
-    grid-gap: 0%;
-    grid-template-columns: 16% 65% 16%;
-    grid-template-rows: 15% 70% 12%;
-    grid-template-areas: "header header header"
-                         " .    section    . "
-                         "footer footer footer"
-}
-
-.logo {display: flex; flex-direction: column; flex-wrap: wrap;}
-
-.social {display: flex; flex-direction: column; flex-wrap: wrap;}
-
-.content {display: grid; grid-area: section; margin: 0%; padding: 0%;
-    background-image: url(imagenes/barriles-bodega.jpg); justify-items: center;}
-
-.pie {display: flex; grid-area: footer;
-    background: #091255; justify-content: space-evenly; flex-direction: row; flex-wrap: wrap; align-content: center;}
-
-#codo, #gracias, #copyright {color: #000000; height: 30%;}
-
-#historia{color: beige; width: 80%; text-align: center;}
-
-h1 {display: grid; align-content: center; margin: 0%; padding: 0%; color: beige;}
-
-p {display: grid; margin: 0%; padding: 0%;}
-
-header {display: flex; grid-area: header; justify-content: space-evenly; flex-direction: row;
-    background: #091255;}
-
-nav ul {display: inline-block; margin: 0%;}
-nav ul li {display: inline-block;}
-nav a {display:flex; align-items: center; color: beige; flex-wrap: wrap;}
-
-
+/* Media queries */
 @media screen and (max-width: 768px){
         body{
             grid-template-areas: "header header header"

@@ -24,7 +24,7 @@ body {
     background-image: url(imagenes/barriles-bodega.jpg); justify-items: center;}
 
 .pie {display: flex; grid-area: footer;
-    background: grey; justify-content: space-evenly; flex-direction: row; flex-wrap: wrap; align-content: center;}
+    background: #091255; justify-content: space-evenly; flex-direction: row; flex-wrap: wrap; align-content: center;}
 
 #codo, #gracias, #copyright {color: #000000; height: 30%;}
 
@@ -35,7 +35,7 @@ h1 {display: grid; align-content: center; margin: 0%; padding: 0%; color: beige;
 p {display: grid; margin: 0%; padding: 0%;}
 
 header {display: flex; grid-area: header; justify-content: space-evenly; flex-direction: row;
-    background: grey;}
+    background: #091255;}
 
 nav ul {display: inline-block; margin: 0%;}
 nav ul li {display: inline-block;}

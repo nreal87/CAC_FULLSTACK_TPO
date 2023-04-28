@@ -158,8 +158,9 @@ p {
     font-size:180%;
 }
 .imagenes{ 
-    margin-right: 0.5%;
-    max-width: 15%;    
+    align-self: center;
+    justify-self: center;
+    max-width: 30%;    
 }
 .vindos{
     padding: 5%;

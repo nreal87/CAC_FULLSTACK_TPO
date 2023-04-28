@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Estilos generales V2 */
 * {
     /*overflow: hidden;*/
     /*height: 100%;*/
@@ -311,6 +311,7 @@ input:focus, textarea:focus, select:focus{
 @media all and (max-width: 540px){
     body {
         grid-template-rows: 20% auto 20%;
+        margin: 0;
     }
     .top{
         grid-template-columns: 100%;

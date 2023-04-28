@@ -10,7 +10,6 @@
 body {
     height: 100vh;
     margin:0;
-    background: linear-gradient(black, grey, lightgrey, white, lightgrey, grey, black);
     display: grid;
     grid-template-rows: 10% auto 20%;
     grid-template-areas: "top"
@@ -51,6 +50,7 @@ p {
 }
 
 .logo{
+    min-height: 50px;
     grid-area: logo;
     vertical-align: middle;
     align-content: center;
@@ -266,7 +266,6 @@ input:focus, textarea:focus, select:focus{
 }
 
 .button:hover{
-    width: 30%;
     background-color: blue;
     border: 3px solid blue;
     color: white;
@@ -282,17 +281,64 @@ input:focus, textarea:focus, select:focus{
     font-style: italic;
 }
 
-
+/*****************/
 /* Media queries */
-@media screen and (max-width: 768px){
-        body{
-            grid-template-areas: "header header header"
-                                 " . section ."
-                                 "footer footer footer"} }
-    
-@media screen and (max-width: 450px){
-        body{
-            grid-template-areas: "header header header"
-                                 " . section ."
-                                 "footer footer footer"} }
+/*****************/
+/* De 540 a 1080px */
+@media all and (max-width: 1080px){
+    .contact-main {
+        padding: 20px 10%;
+        grid-template-columns: 100%;
+        grid-template-areas: "contact-data"
+                             "map"
+                             "form"
+    }
+    form{
+        grid-area: form;
+        border-radius: 20px;
+        border: 3px solid grey;
+        margin: 0 0 20px 0;
+    }
+    .button{
+        width: 45%;
+        font-size: 100%;
+        font-weight: bold;
+        color:#505050;
+    }
+}
+
+/* De 0 a 540px */
+@media all and (max-width: 540px){
+    body {
+        grid-template-rows: 20% auto 20%;
+    }
+    .top{
+        grid-template-columns: 100%;
+        grid-template-areas: "logo"
+                             "menu"
+                             ".";
+    }
+    .menu {
+        text-align: center;
+    }
+    .menu ul{
+        padding:0;
+    }
+    .menu ul li{
+        display: block;
+    }
+    .contact-main {
+        padding: 20px 1%;
+        grid-template-columns: 100%;
+        grid-template-areas: "contact-data"
+                             "map"
+                             "form";
+        margin-bottom: 20px;
+    }
+    .form-body{
+        padding: 0;
+        margin: 1% 5%;
+    }
+
+}
 

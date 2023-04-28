@@ -310,7 +310,7 @@ input:focus, textarea:focus, select:focus{
 /* De 0 a 540px */
 @media all and (max-width: 540px){
     body {
-        grid-template-rows: 20% auto 20%;
+        grid-template-rows: auto auto 20%;
         margin: 0;
     }
     .top{
@@ -323,7 +323,7 @@ input:focus, textarea:focus, select:focus{
         text-align: center;
     }
     .menu ul{
-        padding:0;
+        padding: 0 0 10px 0;
         margin:0;
     }
     .menu ul li{

@@ -4,62 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    .header {
-        display: grid;
-        grid-area: header;
-        justify-content: center;
-    }
-    body{
-        background-color: #091255;
-        font-size: 1rem;
-    }
-    .titulo{
-        color: white;
-        text-align: center;
-        font-family: Arial;
-        font-size:200%;
-    }
-    .subtitlo{
-        color:white;
-        text-align: center;
-        font-family: Arial;
-        font-size:180%;
-    }
-
-    .imagenes{ 
-        margin-right: 0.5%;
-        max-width: 15%;    
-    }
-    .botels{
-        background-color: #091259;
-        margin: 3%;
-    }
-    .vindos{
-        padding: 5%;
-        margin-left: 2%;
-        margin-right: 2%;
-        display: grid;
-        grid-template-columns: 30% 40% 30% ;
-        column-gap: 3%;
-        row-gap: 10%;
-        text-align: center;
-    }
-    .titvinos{
-        color: whitesmoke;
-    }
-    .textvindos{
-        color: whitesmoke;
-        font-family: Arial;
-    }
-    </style>
-    <title>Vinos</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Bodega La Azul</title>
 </head>
+
 <body>
-    <div class="header">
+    <header class="top">
+        <div class="logo">
+            <div class="logo-container">
+                <a href="index.html"><img src="img/la-azul-logo.svg" alt="logo"></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li id="current-page"><a href="vinos.html">Vinos</a></li>
+                <li><a href="bodega.html">Bodega</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="botels-main">
         <h1 class="titulo">Nuestros vinos y variedades</h1>
-    </div>
-    <div class="botels">
         <H1 class="subtitlo">Tintos</H1>
         <div class="vindos">
             <h2 class="titvinos">Azul Malbec</h2>
@@ -98,11 +64,13 @@
                 <p class="textvindos"> Este rosé de edición limitada está dedicado y hecho con amor para Lou, fruto de la Unión Argentina, Francia y cuarta generación de La Azul. Elaborado con racimos seleccionados de Merlot y Caverne Franc, "Petit Lou" se presenta con la elegancia del zorro gris que, atrevido, cruza por las noches nuestros viñedos bajo el claro de la luna..</p><img src="VINOS/Rosados/petitelou.png" alt="" class="imagenes">
         </div>
     </div>  
-    <div class="pie">
-        <footer>
-            <p> © Bodega La Azul 2023 <br><a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/"
-                target="_blank">Desarrollado para Codo a Codo</a></p>
-        </footer>  
-    </div>   
+    <footer class="footer">
+        <a id="codo" href="https://inscripcionesagencia.bue.edu.ar/codoacodo/" title="Agencia de aprendizaje"
+        target="_blank">Desarrollado para Codo a Codo</a>
+        <a id="copyright" href="https://bodegalaazul.com/" title="Bodega La Azul"
+        target="_blank"> © Bodega La Azul 2023 </a>
+        <a id="gracias" href="https://www.flaticon.es" title="íconos"
+        target="_blank">Íconos creados por Freepik - Flaticon</a>
+    </footer>  
 </body>
 </html>

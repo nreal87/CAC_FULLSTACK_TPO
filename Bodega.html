@@ -4,43 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bodega</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Bodega La Azul</title>
     <style>
-    .header {
+    /* .header {
         display: grid;
         grid-area: header;
         justify-content: center;
-    }
-    .titulo{
-        color: grey;
-        text-align: center;
-        font-family: Arial;
-        font-size:200%;
-    }
-    .subtitlo{
-        color:grey;
-        text-align: center;
-        font-family: Arial;
-        font-size:180%;
-    }
-    .main_bodega{
-        display: grid;
-        grid-template-columns: 40% 45%;
-        grid-gap: 5%;
-        margin: 3% 2% 3% 10%;
-        text-align: justify;
-        line-height: 130%;
-    }
+    } */
+    
 
     </style>
 </head>
 <body>
+    <header class="top">
+        <div class="logo">
+            <div class="logo-container">
+                <a href="index.html"><img src="img/la-azul-logo.svg" alt="logo"></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="vinos.html">Vinos</a></li>
+                <li id="current-page"><a href="bodega.html">Bodega</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div class="header">
+    <div class="bodega-main">
         <h1 class="titulo">Nuestra historia</h1>
-    </div>
-    
-    <div class="main_bodega">
         <p>La Azul es una pequeña bodega situada al pie del imponente Cordón del Plata, parte de la Cordillera de Los Andes, en el Valle de Uco, corazón de la provincia de Mendoza. Pero, ¿qué es Bodega La Azul? Y quizás más importante, ¿cómo llegamos a hacer vino?, ¿por qué nos gusta hacer vinos? Y la respuesta a todas estas preguntas nos llevan atrás en el tiempo. Por generaciones, desde que Francisco Hinojosa llegó a estas tierras, hace más de 60 años, hemos practicado el cultivo de la uva para producir vinos de alta calidad, pero no fue sino hasta este siglo que el sueño de todas estas generaciones se volvió realidad. En 2003 nace Bodega La Azul, pero la tradición del cultivo de la viña irriga nuestras venas desde que nuestros abuelos llegaron al Valle de Uco y entendieron que en este suelo pedregoso podrían producirse excelentes frutas. Hoy que el valle rebosa de espalderos y maquinaria de última tecnología resulta difícil imaginar ese tiempo en donde no había nada más que piedras y arena y el cauce de un río seco en el invierno. Resulta difícil imaginar que ellos llegaron y tuvieron que probar cultivos: chacra, olivos, nogales… la vid. Gracias a esta tradición que hemos heredado hoy podemos decir que tenemos la suerte de producir nuestras propias uvas, un aspecto fundamental a la hora de producir un buen vino.</p>
         
         <p>Hoy en día la bodega cuenta con una capacidad de 120.000 litros en tanques de acero inoxidable. La línea de varietales terminará su camino en botella, luego de su paso por los tanques; las líneas Reserva y Gran Reserva, en cambio, pasarán a barricas de roble francés y americano; que con sus diferentes tostados y aromas modifican sutilmente por largos meses al vino que duerme dentro suyo.
@@ -52,11 +45,13 @@
         Para conocer nuestra posada, la Casa de Huéspedes de La Azul, podés visitar su página web.
         </p>
     </div>
-    <div class="pie">
-        <footer>
-            <p> © Bodega La Azul 2023 <br><a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/"
-                target="_blank">Desarrollado para Codo a Codo</a></p>
-        </footer>  
-    </div>   
+    <footer class="footer">
+        <a id="codo" href="https://inscripcionesagencia.bue.edu.ar/codoacodo/" title="Agencia de aprendizaje"
+        target="_blank">Desarrollado para Codo a Codo</a>
+        <a id="copyright" href="https://bodegalaazul.com/" title="Bodega La Azul"
+        target="_blank"> © Bodega La Azul 2023 </a>
+        <a id="gracias" href="https://www.flaticon.es" title="íconos"
+        target="_blank">Íconos creados por Freepik - Flaticon</a>
+    </footer>   
 </body>
 </html>

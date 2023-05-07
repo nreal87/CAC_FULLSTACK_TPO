@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Bodega La Azul</title>
 </head>
 
@@ -81,19 +82,20 @@
         </div>
 
         <!-- Formulario -->
-        <form class="form">
+        <form class="form" action="#" onsubmit=validateForm() method="post">
+        <!-- <form class="form" id="contactForm" onsubmit="return validateForm()" method="post"> -->
             <div class="form-top">
                 <h2>Contáctese con nosotros</h2>
             </div>
             <div class="form-body">
                 <label for="fname">Nombre y apellido</label>
-                <input type="text" id="name" name="name" placeholder="Ingrese su nombre y apellido" required>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre y apellido">
                 <br><br>
-                <label for="fname">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Ingrese su correo electrónico">
                 <br><br>
-                <label for="fname">Teléfono</label>
-                <input type="tel" id="tel" name="tel" placeholder="Ingrese su número de teléfono" required>
+                <label for="tel">Teléfono</label>
+                <input type="tel" id="tel" name="tel" placeholder="Ingrese su número de teléfono">
                 <br><br>
                 <label for="country">Pais</label>
                 <select id="country" name="country">
@@ -102,8 +104,8 @@
                     <option value="chile">Chile</option>
                 </select>
                 <br><br>
-                <label for="subject">Mensaje</label>
-                <textarea id="subject" name="subject" placeholder="Escriba aquí su mensaje..." required></textarea>
+                <label for="msg">Mensaje</label>
+                <textarea id="msg" name="msg" placeholder="Escriba aquí su mensaje..."></textarea>
                 <br><br>
                 <div class="form-buttons">
                     <input class="button" type="submit" value="Enviar">

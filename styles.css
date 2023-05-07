@@ -126,7 +126,8 @@ p {
     grid-area: main; 
     margin: 0%; 
     padding: 0%;
-    background-image: url(img/barriles-bodega.jpg); 
+    background-image: url(img/barriles-bodega.jpg);
+    background-size: cover;
     justify-items: center;
 }
 

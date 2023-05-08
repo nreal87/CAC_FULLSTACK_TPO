@@ -52,3 +52,9 @@ function validateForm() {
     
     return true;
   }
+
+
+  window.onload = Init;
+
+  
+

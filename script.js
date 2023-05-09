@@ -48,7 +48,7 @@ function validateForm() {
 
     //Finalmente, si llegó hasta aqui, se envia el form.
     alert("Muchas gracias por su mensaje, en breve nos pondremos en contacto con usted.")
-    document.fvalida.submit()
+    document.contact-form.submit()
     
     return true;
   }

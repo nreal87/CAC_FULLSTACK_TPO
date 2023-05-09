@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/uvas (1).png" type="image/x-icon">
+    <script src="script.js"></script>
     <title>Bodega La Azul</title>
 </head>
 
 <body>
-    <div class="emergente">
+    <div class="emergente" id="age-popup">
         <p>Debes ser mayor de edad para poder visitar este sitio web</p>
         <!-- <div class="boton menor">Soy menor de 18 años</div> -->
-        <div class="boton mayor">Sí, Soy mayor de 18 años</div>
+        <div class="boton-mayor" onclick=esMayor()>Sí, Soy mayor de 18 años</div>
+        <!-- <input class="boton-mayor" value="Sí, Soy mayor de 18 años" onclick=esMayor()> -->
     </div>
 
     <header class="top">

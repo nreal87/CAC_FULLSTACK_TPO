@@ -415,11 +415,12 @@ input:focus, textarea:focus, select:focus{
 }
 
 
-.index-main{
+/* .index-main{
     opacity:.3;
-    }
+    } */
 
 .emergente{
+    /* opacity:1; */
     width:400px;
     height:200px;
     position:fixed;
@@ -439,7 +440,7 @@ input:focus, textarea:focus, select:focus{
     font-size:24px;
 }
 
-.emergente .boton{
+.emergente .boton-mayor{
     font-size:18px;
     padding:10px;
     border:1px solid #000;
@@ -448,8 +449,9 @@ input:focus, textarea:focus, select:focus{
     width:150px;
     margin-top:32px;
     box-shadow:5px 5px 5px #ccc;
+    z-index: 3;
 }
 /* .menor{background-color:#FAF0E6;} */
-.mayor{background-color:#F5F5DC;}
+.boton-mayor{background-color:#F5F5DC;}
 /* .menor:hover{background-color:#ff0000;} */
-.mayor:hover{background-color:#00ff00;}
+.boton-mayor:hover{background-color:#00ff00;}

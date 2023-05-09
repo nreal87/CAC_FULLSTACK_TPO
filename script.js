@@ -53,8 +53,10 @@ function validateForm() {
     return true;
   }
 
-
-  window.onload = Init;
+function esMayor(){
+    let ageValidation = document.getElementById("age-popup").style.display = "none";
+    console.log("Es mayor de 18 años");
+}
 
   
 

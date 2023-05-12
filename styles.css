@@ -142,27 +142,28 @@ p {
 .botels-main{
     grid-area: main;
     background-color: #091259;
-    padding: 20px 20%;
+    padding: 2% 2% 2% 2% 2%;
     margin-top:10px;
 }
 .titulo{
     color: white;
     text-align: center;
-    font-family: Arial;
-    font-size:200%;
+    /*font-size:200%;*/
 }
 .subtitlo{
-    color:white;
+    color: white;
     text-align: center;
-    font-family: Arial;
-    font-size:180%;
+    /*font-size:180%;*/
 }
 .imagenes{ 
+   background-color: #505050;
     align-self: center;
     justify-self: center;
-    max-width: 30%;    
+    max-width: 20%;
+    min-width: 10%;    
 }
 .vindos{
+    background-color: #505050;
     padding: 5%;
     margin-left: 2%;
     margin-right: 2%;
@@ -173,35 +174,40 @@ p {
     text-align: center;
 }
 .titvinos{
-    color: whitesmoke;
+    color:white;
+    background-color: #505050;
+    text-align: center;
 }
 .textvindos{
-    color: whitesmoke;
-    font-family: Arial;
+    color: white;
+    background-color: #505050;
+    
 }
 
 
 
 /************************/
 /* Pagina: bodega.html */
-/* Estilos del main     */
+/* Estilos del main   */
 .bodega-main{
-    padding: 20px 20%;
-    background-color: #f5f5f5;
+    color: white;
+    padding: 1% 5% 1% 5%;
+    justify-item:center ;
+    background-image: url(img/BANDERA.jpg);
+    background-position: center;
     grid-area: main;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "bodega-title bodega-title"
                          "bodega-left bodega-right";
-    grid-gap: 5%;
+    grid-gap: 2%;
     text-align: justify;
     line-height: 130%;
 }
 .bodega-title{
     grid-area:bodega-title;
-    color: grey;
+    color: white;
     text-align: center;
-    font-family: Arial;
     font-size:200%;
 }
 
@@ -374,6 +380,31 @@ input:focus, textarea:focus, select:focus{
         font-weight: bold;
         color:#505050;
     }
+    .vindos{
+        background-color: #505050;
+        padding: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+        grid-template-columns: 30% 40% 30% ;
+        column-gap: 3%;
+        row-gap: 10%;
+        text-align: center;
+    }
+    .bodega-main{
+        color: white;
+        padding: 1% 5% 1% 5%;
+        justify-item:center ;
+        background-image: url(img/BANDERA.jpg);
+        background-position: center;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "bodega-title bodega-title"
+                             "bodega-left bodega-right";
+        grid-gap: 2%;
+        text-align: justify;
+        line-height: 130%;
+    }
 }
 
 /* De 0 a 540px */
@@ -411,5 +442,30 @@ input:focus, textarea:focus, select:focus{
         margin: 1% 5%;
     }
 
+    .vindos{
+        background-color: #505050;
+        padding: 0;
+        display: block;
+        margin-left: 2%;
+        margin-right: 2%;
+    
+    }
+    .imagenes{ 
+        background-color: #505050;
+         justify-self: center;
+         max-width: 20%;
+         min-width: 10%; 
+    }
+    .bodega-main{
+    color: white;
+    padding: 1% 5% 1% 5%;
+    justify-item:center ;
+    background-image: url(img/BANDERA.jpg);
+    background-position: center;
+    grid-area: main;
+    display: block;
+    grid-gap: 2%;
+    text-align: justify;
+    line-height: 130%;
+    }
 }
-

@@ -54,3 +54,12 @@ function validateForm() {
     
     return true;
   }
+
+let url = 'https://jsonplaceholder.typicode.com/albums' //variable donde hacemos referencia al origen de los datos
+fetch(url) //solicitud a la url
+    .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
+    .then(data => {
+        console.log(data) //mostramos el objeto data por consola
+        // document.getElementById("datos").innerHTML = `ID: ${data[11].id} <br> USER ID: ${data[11].userId} <br> TITLE: ${data[11].title}` //Mostramos datos del array
+    })
+    .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch

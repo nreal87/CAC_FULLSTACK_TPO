@@ -142,7 +142,8 @@ p {
 .botels-main{
     grid-area: main;
     background-color: #091255;
-    padding: 2% 2% 2% 2% 2%;
+    padding: 20px 20%;
+    /* background-color: #f5f5f5; */
     margin-top:10px;
 }
 .titulo{
@@ -190,25 +191,35 @@ p {
 /* Pagina: bodega.html */
 /* Estilos del main   */
 .bodega-main{
-    color: #f5f5dc;
-    padding: 1% 5% 1% 5%;
+    color: #505050;
     justify-items:center;
-    background-image: url(img/BANDERA.jpg);
-    background-position: center;
     grid-area: main;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "bodega-title bodega-title"
                          "bodega-left bodega-right";
-    grid-gap: 2%;
     text-align: justify;
-    line-height: 130%;
+    line-height: 200%;
 }
 .bodega-title{
     grid-area:bodega-title;
+    overflow: hidden;
+    padding-top: 5%;
+    background-image: url(img/foto-bodega-1.jpg);
+    background-position: center;
     color:  #f5f5f5;
     text-align: center;
     font-size:200%;
+    height:60vh;
+    width: 100%;
+}
+.bodega-left{
+    grid-area:bodega-left;
+    padding: 10px 5% 10px 20%;
+} 
+.bodega-right{
+    grid-area:bodega-right;
+    padding: 10px 20% 10px 5%;
 }
 
 /************************/
@@ -380,31 +391,25 @@ input:focus, textarea:focus, select:focus{
         font-weight: bold;
         color:#505050;
     }
+    .botels-main{
+        padding: 20px 10%;
+    }
     .vindos{
-        background-color: #505050;
-        padding: 5%;
-        margin-left: 2%;
-        margin-right: 2%;
-        grid-template-columns: 30% 40% 30% ;
-        column-gap: 3%;
-        row-gap: 10%;
-        text-align: center;
+        grid-template-columns: 100%;
+        grid-template-areas: "."
+                             "."
+                             ".";
+        display: block;
     }
     .bodega-main{
-        color: #f5f5dc;
-        padding: 1% 5% 1% 5%;
-        justify-items:center ;
-        background-image: url(img/BANDERA.jpg);
-        background-position: center;
-        grid-area: main;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: "bodega-title bodega-title"
-                             "bodega-left bodega-right";
-        grid-gap: 2%;
-        text-align: justify;
-        line-height: 130%;
+        grid-template-columns: 100%;
+        grid-template-areas: "bodega-title"
+                             "bodega-left"
+                             "bodega-right";
     }
+    .bodega-left, .bodega-right{
+        padding: 10px 5%;
+    } 
 }
 
 /* De 0 a 540px */
@@ -441,14 +446,8 @@ input:focus, textarea:focus, select:focus{
         padding: 0;
         margin: 1% 5%;
     }
-
-    .vindos{
-        background-color: #505050;
-        padding: 0;
-        display: block;
-        margin-left: 2%;
-        margin-right: 2%;
-    
+    .botels-main{
+        padding: 20px 1%;
     }
     .imagenes{ 
         background-color: #505050;
@@ -456,17 +455,8 @@ input:focus, textarea:focus, select:focus{
          max-width: 20%;
          min-width: 10%; 
     }
-    .bodega-main{
-    color: #f5f5dc;
-    padding: 1% 5% ;
-    padding: 1% 5% 1% 5%;
-    justify-items:center ;
-    background-image: url(img/BANDERA.jpg);
-    background-position: center;
-    grid-area: main;
-    display: block;
-    grid-gap: 2%;
-    text-align: justify;
-    line-height: 130%;
+    .bodega-left, bodega-right{
+        grid-area:bodega-left;
+        padding: 10px 1%;
     }
 }

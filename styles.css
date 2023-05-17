@@ -146,12 +146,12 @@ p {
     margin-top:10px;
 }
 .titulo{
-    color: white;
+    color: #f5f5f5;
     text-align: center;
     /*font-size:200%;*/
 }
 .subtitlo{
-    color: white;
+    color: #f5f5f5;
     text-align: center;
     /*font-size:180%;*/
 }
@@ -174,12 +174,12 @@ p {
     text-align: center;
 }
 .titvinos{
-    color:white;
+    color:#f5f5dc;
     background-color: #505050;
     text-align: center;
 }
 .textvindos{
-    color: white;
+    color: #f5f5dc;
     background-color: #505050;
     
 }
@@ -190,9 +190,9 @@ p {
 /* Pagina: bodega.html */
 /* Estilos del main   */
 .bodega-main{
-    color:#f5f5f5;
+    color: #f5f5dc;
     padding: 1% 5% 1% 5%;
-    justify-item:center ;
+    justify-items:center;
     background-image: url(img/BANDERA.jpg);
     background-position: center;
     grid-area: main;
@@ -391,9 +391,9 @@ input:focus, textarea:focus, select:focus{
         text-align: center;
     }
     .bodega-main{
-        color:#f5f5f5;
+        color: #f5f5dc;
         padding: 1% 5% 1% 5%;
-        justify-item:center ;
+        justify-items:center ;
         background-image: url(img/BANDERA.jpg);
         background-position: center;
         grid-area: main;
@@ -457,9 +457,10 @@ input:focus, textarea:focus, select:focus{
          min-width: 10%; 
     }
     .bodega-main{
-    color:#f5f5f5;
+    color: #f5f5dc;
+    padding: 1% 5% ;
     padding: 1% 5% 1% 5%;
-    justify-item:center ;
+    justify-items:center ;
     background-image: url(img/BANDERA.jpg);
     background-position: center;
     grid-area: main;

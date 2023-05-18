@@ -55,11 +55,14 @@ function validateForm() {
     return true;
   }
 
-let url = 'https://jsonplaceholder.typicode.com/albums' //variable donde hacemos referencia al origen de los datos
+// let url = 'https://jsonplaceholder.typicode.com/albums' //variable donde hacemos referencia al origen de los datos
+// let url = 'https://api.openweathermap.org/data/2.5/weather?q=Toronto,CA&appid=15d874b6180f351475e038f406300468'
+let url = 'https://api.openweathermap.org/data/2.5/weather?lat=-33.09272368943704&lon=-69.220885&appid=b8641a40995a53dc166e6c5b0cd66e5d'
 fetch(url) //solicitud a la url
     .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
     .then(data => {
         console.log(data) //mostramos el objeto data por consola
+        console.log("Temperatura actual: " + Math.round((data.main.temp-273.15)*10)/10 + "º") //mostramos el objeto data por consola
         // document.getElementById("datos").innerHTML = `ID: ${data[11].id} <br> USER ID: ${data[11].userId} <br> TITLE: ${data[11].title}` //Mostramos datos del array
     })
     .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch

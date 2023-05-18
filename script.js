@@ -30,6 +30,8 @@ function validateForm() {
         alert("Teléfono vacio. Por favor complete el campo antes de enviar el formulario.");
         return false;
     }
+    // Validacion con regex del formato de numero telefonico. 
+    // Se saco de un ejemplo y no esta funcionando como me gustaria y no me da el tiempo para investigarlo mas a fondo asi que prefiero dejarlo comentado por ahora.
     /*if(phoneNumberRegex.test(contactTel)){
         alert("Teléfono invalido. Por favor complete con un numero de telefono valido antes de enviar el formulario.");
         return false;
@@ -48,7 +50,7 @@ function validateForm() {
 
     //Finalmente, si llegó hasta aqui, se envia el form.
     alert("Muchas gracias por su mensaje, en breve nos pondremos en contacto con usted.")
-    document.fvalida.submit()
+    document.contact-form.submit()
     
     return true;
   }

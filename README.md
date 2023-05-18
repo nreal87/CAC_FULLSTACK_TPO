@@ -8,6 +8,7 @@ Cuenta viculada al repositorio (nreal87)
 
 ## ¿Cuándo se entrega?
 Clase 22: miércoles 17 al viernes 19 de mayo de 2023.
+ACTUALIZACION: entrega hasta el 24 de mayo de 2023
 
 ## ¿Cómo se desarrollará el proyecto?
 El proyecto web se desarrollará en grupos de 4 integrantes cada uno (obligatorio). Cada grupo deberá designar un representante de forma tal de establecer contacto directo con el Instructor del curso. Será ese integrante el que recibirá la devolución del proyecto realizada por el Instructor en el transcurso de la cursada y cualquier notificación relevante realizada a lo largo del desarrollo del proyecto.

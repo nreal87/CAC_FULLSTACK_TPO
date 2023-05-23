@@ -107,7 +107,9 @@ p {
     display: grid; 
     grid-template-columns: 50% 50%;
     grid-template-areas: ". .";
-    align-content: center;
+}
+.footer p{
+    text-align: left;
 }
 
 #temperature, #codo, #gracias, #copyright {

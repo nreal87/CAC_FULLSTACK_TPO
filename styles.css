@@ -113,10 +113,10 @@ p {
 }
 
 #temperature, #codo, #gracias, #copyright {
-    display: grid;
-    grid-template-columns: auto;
+    display: block;
+    /* grid-template-columns: auto; */
     color: white; 
-    height: 30%;
+    /* height: 30%; */
 }
 .data_footer{
     color: white

@@ -110,10 +110,17 @@ p {
     align-content: center;
 }
 
-#codo, #gracias, #copyright {
+#temperature, #codo, #gracias, #copyright {
+    display: grid;
+    grid-template-columns: auto;
     color: white; 
     height: 30%;
 }
+.data_footer{
+    color: white
+}
+
+
 
 /************************/
 /* Pagina: index.html */

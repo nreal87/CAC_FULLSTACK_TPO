@@ -410,6 +410,11 @@ input:focus, textarea:focus, select:focus{
     .bodega-left, .bodega-right{
         padding: 10px 5%;
     } 
+    .footer {
+        grid-template-columns: 100%;
+        grid-template-areas: "."
+                             ".";
+    }
 }
 
 /* De 0 a 540px */
@@ -433,6 +438,9 @@ input:focus, textarea:focus, select:focus{
     }
     .menu ul li{
         display: block;
+    }
+    .footer {
+        padding: 20px 1%;
     }
     .contact-main {
         padding: 20px 1%;

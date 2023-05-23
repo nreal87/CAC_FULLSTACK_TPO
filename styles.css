@@ -101,12 +101,12 @@ p {
 
 /* Estilos del footer */
 .footer {
-    display: flex; 
     grid-area: footer;
+    padding: 20px 20%;
     background: #505050; 
-    justify-content: space-evenly; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-areas: ". .";
     align-content: center;
 }
 

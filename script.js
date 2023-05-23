@@ -62,7 +62,8 @@ fetch(url) //solicitud a la url
     .then(response => response.json()) //se resuelve la promesa, al obtener la respuesta la pasa a un determinado formato (json). Extraemos el contenido JSON desde la respuesta.
     .then(data => {
         console.log(data) //mostramos el objeto data por consola
-        console.log("Temperatura actual: " + Math.round((data.main.temp-273.15)*10)/10 + "º") //mostramos el objeto data por consola
-        // document.getElementById("datos").innerHTML = `ID: ${data[11].id} <br> USER ID: ${data[11].userId} <br> TITLE: ${data[11].title}` //Mostramos datos del array
+        let temperature_string = "Temperatura actual: " + Math.round((data.main.temp-273.15)*10)/10 + "º";
+        console.log(temperature_string) //mostramos el string por consola
+        let temperature = document.getElementById("temperature").innerHTML = temperature_string;
     })
     .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch

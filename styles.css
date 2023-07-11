@@ -377,6 +377,72 @@ input:focus, textarea:focus, select:focus{
 }
 
 /*****************/
+/* CRUD          */
+/*****************/
+/* crud.html */
+.crud-main {
+    grid-area: main; 
+    margin: 0%; 
+    padding: 0%;
+    justify-items: center;
+}
+.h1-crud{
+    text-align: center;
+    color: #091255;
+}
+.h2-crud{
+    text-align: center;
+}
+table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+.a-crud {
+    padding: 8px;
+    margin:4px;
+    background-color: #091255;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 85%;
+}
+.a-crud:hover {
+    background-color: blue;
+}
+.form-crud {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+.crud-button {
+    padding: 8px;
+    margin:4px;
+    background-color: #091255;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.crud-button:hover {
+    background-color: blue;
+}
+
+/*****************/
 /* Media queries */
 /*****************/
 /* De 540 a 1080px */

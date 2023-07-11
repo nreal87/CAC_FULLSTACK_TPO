@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de uso de la API</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/wine_104234.ico" type="image/x-icon"> 
+    <title>Bodega La Azul</title>
 </head>
 
-
 <body>
-    <div>
-        <h1>TPO FINAL</h1>
-        <h3>Codo a Codo 2023</h3>
+    <!--Header Flex+Grid pero los hijos con Flex wrap para no heredar---poner nav de nico-->
+    <header class="top">
+        <div class="logo">
+            <div class="logo-container">
+                <a href="index.html"><img src="img/la-azul-logo.svg" alt="logo"></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="vinos.html">Vinos</a></li>
+                <li><a href="bodega.html">Bodega</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="current-page"><a href="crud.html">CRUD</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="crud-main">
+        <h1 class="h1-crud">CRUD Bodega La Azul </h1>
         <table>
-            <tr><td class="contenedor-centrado"><a href="altas.html">Alta de productos</a></td></tr>
-            <tr><td class="contenedor-centrado "><a href="listado.html">Listado de productos</a></td></tr>
-            <tr><td class="contenedor-centrado "><a href="modificaciones.html">Modificar datos de productos</a></td></tr>
-            <tr><td class="contenedor-centrado "><a href="listadoEliminar.html">Eliminar productos</a></td></tr>
-            <tr><td class="contenedor-centrado "><a href="carrito.html">Carrito de compras</a></td></tr>
+            <tr><td class="contenedor-centrado"><a class="a-crud" href="altas.html">Alta de productos</a></td></tr>
+            <tr><td class="contenedor-centrado "><a class="a-crud" href="listado.html">Listado de productos</a></td></tr>
+            <tr><td class="contenedor-centrado "><a class="a-crud" href="modificaciones.html">Modificar datos de productos</a></td></tr>
+            <tr><td class="contenedor-centrado "><a class="a-crud" href="listadoEliminar.html">Eliminar productos</a></td></tr>
+            <tr><td class="contenedor-centrado "><a class="a-crud" href="carrito.html">Carrito de compras</a></td></tr>
         </table>
     </div>
+    <footer class="footer">
+        <div>
+            <p class="data_footer">Mail: administracion@bodegalaazul.com <br>Reservas:+54-2622-603443
+            </p>
+            <p id="temperature">Temperatura en Tupungato, Mendoza:   </p>
+        </div>
+        <div>
+            <a id="codo" href="https://inscripcionesagencia.bue.edu.ar/codoacodo/" title="Agencia de aprendizaje" target="_blank">Desarrollado para Codo a Codo</a>
+            <a id="copyright" href="https://bodegalaazul.com/" title="Bodega La Azul" target="_blank"> © Bodega La Azul 2023 </a>
+            <a id="gracias" href="https://icon-icons.com/" title="íconos" target="_blank">Íconos creados por Freepik - Flaticon - Icon-icons</a>    
+        </div>
+    </footer>
 </body>
 
 
